@@ -1,3 +1,6 @@
+[![CI](https://github.com/aridiosilva/desafios_use_of_IA/actions/workflows/ci.yml/badge.svg)](https://github.com/aridiosilva/desafios_use_of_IA/actions)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+
 # Desafios — Uso de IA
 
 Este repositório reúne os desafios desenvolvidos na Pós-Graduação — Trilha de ESPECIALISTA DE IA. Cada documento contém a especificação do problema, a regra de negócio, descrições em linguagem natural, fluxogramas, pseudocódigo (versões direta e, quando aplicável, modular) e conjuntos de testes/execuções que demonstram o comportamento esperado.
@@ -6,28 +9,44 @@ Este repositório reúne os desafios desenvolvidos na Pós-Graduação — Trilh
 
 - [Desafios atendidos](#desafios-atendidos)
 - [1 - cinema-meia-entrada.md](./cinema-meia-entrada.md)
+  - [Especificação](./cinema-meia-entrada.md#1-especificação)
+  - [Pseudocódigo](./cinema-meia-entrada.md#4-pseudocódigo--versão-direta)
+  - [Teste de mesa](./cinema-meia-entrada.md#6-teste-de-mesa)
 - [2 - classificacao-desempenho-academico.md](./classificacao-desempenho-academico.md)
+  - [Enunciado e regra de negócio](./classificacao-desempenho-academico.md#1-enunciado-e-regra-de-negócio)
+  - [Pseudocódigo / Fluxograma](./classificacao-desempenho-academico.md#3-fluxograma)
 - [3 - controle-financeiro-pessoal.md](./controle-financeiro-pessoal.md)
+  - [Arquitetura e módulos](./controle-financeiro-pessoal.md#3-arquitetura-modular)
+  - [Exemplo de execução](./controle-financeiro-pessoal.md#5-exemplo-de-execução--demonstrativo-em-markdown)
 - [4 - conversor-moedas.md](./conversor-moedas.md)
+  - [Função de conversão](./conversor-moedas.md#2-a-função-de-conversão--o-coração-do-algoritmo)
+  - [Menu e exemplos](./conversor-moedas.md#8-teste-de-mesa-e-exemplo-de-execução)
 - [5 - delivery-taxa-entrega.md](./delivery-taxa-entrega.md)
+  - [Regras por faixa](./delivery-taxa-entrega.md#1-especificação)
+  - [Pseudocódigo & fluxograma](./delivery-taxa-entrega.md#6-pseudocódigo--versão-direta)
 - [6 - lanchonete-calculo-pedido.md](./lanchonete-calculo-pedido.md)
+  - [Cardápio e leitura de quantidades](./lanchonete-calculo-pedido.md#1-especificação)
+  - [Versões: direta / modular / vetores](./lanchonete-calculo-pedido.md#6-pseudocódigo--versão-com-vetores)
 - [7 - simulador-cafeteria.md](./simulador-cafeteria.md)
+  - [Regras (RN01–RN12)](./simulador-cafeteria.md#2-regras-de-negócio)
+  - [Pseudocódigo modularizado](./simulador-cafeteria.md#7-pseudocódigo-modularizado)
 - [8 - simulador-cafeteria-saidas.md](./simulador-cafeteria-saidas.md)
+  - [Saídas simuladas CT01–CT12](./simulador-cafeteria-saidas.md#ct01--ct12)
 
 ## Desafios atendidos
 
-- [1 - cinema-meia-entrada.md](./cinema-meia-entrada.md) — Projeto de um sistema de bilheteria que determina o direito à meia-entrada. O documento traz a especificação de entrada/processamento/saída, o dicionário de variáveis, algoritmo em linguagem natural com validação de entrada, fluxogramas renderizáveis (Mermaid), duas versões de pseudocódigo (direta e modularizada), testes de mesa cobrindo as fronteiras e uma seção com decisões de projeto e justificativas técnicas.
+- [1 - cinema-meia-entrada.md](./cinema-meia-entrada.md) — Projeto de um sistema de bilheteria que determina o direito à meia-entrada. Contém especificação, dicionário de variáveis, validações de entrada, fluxogramas (Mermaid), pseudocódigo (direto e modular) e testes de mesa cobrindo fronteiras, com decisões de projeto documentadas.
 
-- [2 - classificacao-desempenho-academico.md](./classificacao-desempenho-academico.md) — Classificação do desempenho escolar com base na média final: reprovado, recuperação ou aprovado. Contém a regra pedagógica detalhada, validações de entrada, fluxograma, pseudocódigo e variantes modularizadas, além de justificativas sobre a escolha das faixas, testes de mesa e recomendações de implementação para garantir exaustividade e eficiência.
+- [2 - classificacao-desempenho-academico.md](./classificacao-desempenho-academico.md) — Classificação pedagógica por média final: regras, validação, fluxogramas, pseudocódigo (direto e modular), testes de mesa e justificativas sobre faixas e limites.
 
-- [3 - controle-financeiro-pessoal.md](./controle-financeiro-pessoal.md) — Sistema para registro de despesas por tipo e emissão de demonstrativo mensal. O documento descreve a modelagem com listas paralelas, operações de criação/atualização de tipos, ordenação alfabética por tipo, apuração de totais, menores/maiores, cálculo de médias e percentuais, além de uma versão modular, pseudocódigo completo, exemplo de execução em Markdown e considerações sobre limites e extensões (por ex., limites fixos vs. estruturas dinâmicas).
+- [3 - controle-financeiro-pessoal.md](./controle-financeiro-pessoal.md) — Registro de despesas por tipo, apuração estatística (totais, menor/maior, média, percentuais), ordenação por nome e emissão de demonstrativo. Inclui versão modular e exemplos em Markdown.
 
-- [4 - conversor-moedas.md](./conversor-moedas.md) — Conversor de moedas pensado para uma agência de viagens: definição de uma função pura de conversão, tabela de taxas fixas, menu interativo, opção de "converter para todas as moedas" e variantes modularizadas. Inclui discussão sobre a convenção de taxas (R$ por unidade), testes de mesa, fluxogramas Mermaid e exemplos de saída formatada, além de recomendações para manter a função testável e extensível.
+- [4 - conversor-moedas.md](./conversor-moedas.md) — Conversor com função pura de conversão, menu interativo, opção de converter para todas as moedas, tabela de taxas fixas, fluxogramas e testes de mesa; projetado para ser testável e extensível.
 
-- [5 - delivery-taxa-entrega.md](./delivery-taxa-entrega.md) — Cálculo da taxa de entrega baseado em faixas de distância e adicional por chuva. Contém a tabela de regras (faixas mutuamente exclusivas), validação de entrada, pseudocódigo direto e modular, fluxogramas, exemplos de casos de teste cobrindo combinações distância × chuva e decisões de projeto que garantem clareza entre a regra de faixa e a condição independente do adicional.
+- [5 - delivery-taxa-entrega.md](./delivery-taxa-entrega.md) — Cálculo de taxa por faixa de distância e adicional por chuva; documentação das regras, pseudocódigo modular/direto, fluxogramas e exemplos de casos.
 
-- [6 - lanchonete-calculo-pedido.md](./lanchonete-calculo-pedido.md) — Implementação do cálculo do valor total de um pedido em lanchonete: cardápio, leitura de quantidades, cálculo de subtotais por item, total de itens e emissão de cupom. Apresenta versões direta (uma variável por item), modular e com vetores (para escalabilidade), fluxogramas, validações por item e exemplos de execução que ilustram a diferença entre implementação literal e implementações mais reutilizáveis.
+- [6 - lanchonete-calculo-pedido.md](./lanchonete-calculo-pedido.md) — Cálculo do pedido com 8 itens: leitura de quantidades, subtotais, total de itens e cupom; apresenta versões direta, modular e com vetores para escalabilidade.
 
-- [7 - simulador-cafeteria.md](./simulador-cafeteria.md) — Simulador de pedidos para atendimento no balcão: registro de N itens (nome e preço), validações rigorosas (nome obrigatório, preço > 0, limite de itens), aplicação de desconto para cliente cadastrado com arredondamento comercial (half-up) e emissão de cupom. O repositório inclui especificação das regras RN01–RN12, pseudocódigo modular, funções utilitárias (arredondamento e formatação) e casos de teste que cobrem caminhos felizes e validações.
+- [7 - simulador-cafeteria.md](./simulador-cafeteria.md) — Simulador de pedidos por balcão com validações robustas, desconto para cliente cadastrado (10%) com arredondamento half-up, pseudocódigo modular e casos de teste detalhados.
 
-- [8 - simulador-cafeteria-saidas.md](./simulador-cafeteria-saidas.md) — Conjunto de saídas de tela simuladas para os 12 casos de teste do simulador de cafeteria (CT01–CT12). Cada bloco reproduz a sessão completa no terminal, com prompts, entradas, mensagens de erro e cupom final; útil para validar a UX textual e conferir alinhamento, mensagens de erro e arredondamentos.
+- [8 - simulador-cafeteria-saidas.md](./simulador-cafeteria-saidas.md) — Saídas de tela simuladas para os 12 casos de teste do simulador de cafeteria, úteis para validar UX textual, mensagens e alinhamento.
