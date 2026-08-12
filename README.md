@@ -2,6 +2,18 @@
 
 Este repositório reúne os desafios desenvolvidos na Pós-Graduação — Trilha de ESPECIALISTA DE IA. Cada documento contém a especificação do problema, a regra de negócio, descrições em linguagem natural, fluxogramas, pseudocódigo (versões direta e, quando aplicável, modular) e conjuntos de testes/execuções que demonstram o comportamento esperado.
 
+## Sumário
+
+- [Desafios atendidos](#desafios-atendidos)
+- [1 - cinema-meia-entrada.md](./cinema-meia-entrada.md)
+- [2 - classificacao-desempenho-academico.md](./classificacao-desempenho-academico.md)
+- [3 - controle-financeiro-pessoal.md](./controle-financeiro-pessoal.md)
+- [4 - conversor-moedas.md](./conversor-moedas.md)
+- [5 - delivery-taxa-entrega.md](./delivery-taxa-entrega.md)
+- [6 - lanchonete-calculo-pedido.md](./lanchonete-calculo-pedido.md)
+- [7 - simulador-cafeteria.md](./simulador-cafeteria.md)
+- [8 - simulador-cafeteria-saidas.md](./simulador-cafeteria-saidas.md)
+
 ## Desafios atendidos
 
 - [1 - cinema-meia-entrada.md](./cinema-meia-entrada.md) — Projeto de um sistema de bilheteria que determina o direito à meia-entrada. O documento traz a especificação de entrada/processamento/saída, o dicionário de variáveis, algoritmo em linguagem natural com validação de entrada, fluxogramas renderizáveis (Mermaid), duas versões de pseudocódigo (direta e modularizada), testes de mesa cobrindo as fronteiras e uma seção com decisões de projeto e justificativas técnicas.
